@@ -7,3 +7,11 @@
  */
 //Starting session with session_start
 session_start();
+//establishing control structures in script with superglobal session include data of number
+//of visits of user
+if (empty($_SESSION['count'])){
+    $_SESSION['count'] = 1;
+} else{
+    $_SESSION['cpunt']++;
+}
+?>
