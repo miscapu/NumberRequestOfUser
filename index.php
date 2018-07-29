@@ -12,7 +12,7 @@ session_start();
 if (empty($_SESSION['count'])){
     $_SESSION['count'] = 1;
 } else{
-    $_SESSION['cpunt']++;
+    $_SESSION['count']++;
 }
 ?>
 <!--Viewing the user's visits to our page-->
