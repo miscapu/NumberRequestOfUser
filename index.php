@@ -15,3 +15,10 @@ if (empty($_SESSION['count'])){
     $_SESSION['cpunt']++;
 }
 ?>
+//Viewing the user's visits to our page
+<p>
+    Hello Visitor, you have seen this page <?php echo $_SESSION['count'];?> times.
+</p>
+<p>
+    To continue, <a href="nextpage.php?<?php echo htmlspecialchars(SID)?>">Click Here</a>.
+</p>
